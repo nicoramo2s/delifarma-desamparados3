@@ -1,13 +1,13 @@
 <div id="ticket" class="ticket-content">
     <h2 class="text-center text-lg font-bold mb-2">Farmacia Desamparados 3</h2>
     <hr class="border my-2" />
-    <p><strong>Cliente:</strong> <span class="uppercase text-xl">{{ $cliente }}</span></p>
+    <p><strong>Cliente:</strong> <span class="uppercase text-2xl">{{ $cliente }}</span></p>
     <p><strong>Obra Social:</strong> <span class="uppercase">{{ $obraSocial }}</span></p>
     <p><strong>Recetas para firmar:</strong> <span class="uppercase">{{ $cantidadDeRecetas }}</span></p>
     <p><strong>Forma de pago:</strong> <span class="uppercase">{{ $formaDePago }}</span></p>
     <p><strong>Dirección:</strong> <span class="uppercase">{{ $direccion }}</span></p>
     <p><strong>Teléfono:</strong> <span class="uppercase">{{ $telefono }}</span></p>
-    <p><strong>Total:</strong> <span class="uppercase">{{ $total }}</span></p>
+    <p><strong>Total:</strong> <span class="uppercase">${{ $total }}</span></p>
     <hr class="border my-2" />
     <p class="text-center text-xs mt-2">¡Gracias por su pedido!</p>
 </div>

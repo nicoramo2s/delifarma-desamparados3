@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use App\Models\Cliente;
-use Illuminate\Support\Facades\Log;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 
@@ -103,7 +102,6 @@ class DashboardComponent extends Component
             'ubicacion' => $this->ubicacion,
             'telefono' => $this->telefono,
             'total' => $this->total,
-            'numeroCadete' => $this->numero_de_cadete
         ]);
     }
     public function render()

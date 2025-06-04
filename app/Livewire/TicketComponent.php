@@ -30,7 +30,7 @@ class TicketComponent extends Component
         $this->ubicacion = request()->get('ubicacion', '');
         $this->telefono = request()->get('telefono', '');
         $this->total = request()->get('total', 0);
-        $this->numeroCadete = request()->get('numeroCadete', '');
+        $this->numeroCadete = 5492645811779;
         // 👇 esto genera y despacha el evento con el link de WhatsApp
         $this->generarLinkWhatsapp();
     }

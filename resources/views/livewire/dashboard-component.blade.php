@@ -102,19 +102,6 @@
             <span class="text-error text-xs">{{ $message }}</span>
         @enderror
 
-        <div class="flex flex-col">
-            <label class="label label-text mb-1">Cadete</label>
-            <select class="select w-full rounded" wire:model="numero_de_cadete">
-                <option value="" disabled selected>-- Selecciona el Cadete --</option>
-                @foreach (['GONZALO' => '5492645811779', 'ENZO' => '5492645811179'] as $nombre => $numero)
-                    <option value="{{ $numero }}">{{ $nombre }}</option>
-                @endforeach
-            </select>
-            @error('numero_de_cadete')
-                <span class="text-error text-xs">{{ $message }}</span>
-            @enderror
-        </div>
-
         <button type="submit" class="btn btn-primary w-full rounded mt-2">
             Imprimir y Enviar
         </button>
